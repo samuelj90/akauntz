@@ -1,0 +1,12 @@
+.main-content-sidebar-expanded {
+  width: calc(100vw - 280px);
+  min-height: calc(100vh - 56px);
+  margin-top: 56px;
+  padding: 15px;
+}
+
+.sidebar-expanded {
+  width: 280px;
+  min-height: calc(100vh - 56px);
+  margin-top: 56px;
+}
