@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <style>
+    /* Sidebar styles */
+    .sidebar {
+      width: 80px;
+    }
+
+    .sidebar.open {
+      width: 200px;
+    }
+
+    /* Content styles */
+    .content {
+      margin-left: 280px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex">
+    <!-- Main Menu -->
+    <div class="bg-blue-900 text-white h-screen sidebar">
+      <button class="flex items-center justify-center h-16 w-full hover:bg-blue-800">
+        Toggle
+      </button>
+      <a href="#" class="flex items-center justify-center h-16 w-full hover:bg-blue-800">
+        Home
+      </a>
+      <a href="#" class="flex items-center justify-center h-16 w-full hover:bg-blue-800">
+        Dashboard
+      </a>
+      <a href="#" class="flex items-center justify-center h-16 w-full hover:bg-blue-800">
+        Profile
+      </a>
+      <!-- Add more menu items -->
+    </div>
+
+    <!-- Sidebar -->
+    <div class="bg-gray-300 h-screen hidden md:block sidebar open">
+      <a href="#" class="block p-4 hover:bg-gray-400">Menu Item 1</a>
+      <a href="#" class="block p-4 hover:bg-gray-400">Menu Item 2</a>
+      <a href="#" class="block p-4 hover:bg-gray-400">Menu Item 3</a>
+      <!-- Add more sidebar content -->
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 bg-gray-100 content">
+      <h1>Main Content</h1>
+      <!-- Add your main content here -->
+    </div>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
